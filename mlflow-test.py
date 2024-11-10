@@ -67,7 +67,7 @@ with mlflow.start_run():
         sk_model=lr,
         artifact_path="iris_model",
         signature=signature,
-        input_example=X_train#,
+        input_example=X_train#, # the registered_model_name can't go into free Databricks (CE)
         # registered_model_name="tracking-quickstart", this will fail on Databricks CE
     )
 
