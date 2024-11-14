@@ -43,9 +43,10 @@ accuracy = accuracy_score(y_test, y_pred)
 # using Databricks
 mlflow.login()
 mlflow.set_tracking_uri("databricks")
-experiment_path = "/Users/m.h.maruf@tue.nl/quickstart"
+experiment_path = "/Users/m.h.maruf@tue.nl/quickstart2"
 
 # Create a new MLflow Experiment
+# mlflow.set_experiment(experiment_path)
 mlflow.set_experiment(experiment_path)
 
 # Start an MLflow run
